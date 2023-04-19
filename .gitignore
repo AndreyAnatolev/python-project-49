@@ -1,5 +1,6 @@
 .venv/
-.pyc/
-.whl/
-.gz/
-.pyc/
+__pycache__
+*.pyc
+dist/
+brain_games/.coverage
+.idea/
