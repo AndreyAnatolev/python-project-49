@@ -1,6 +1,8 @@
-.venv/
+*.egg-info
 __pycache__
-*.pyc
 dist/
-brain_games/.coverage
-.idea/
+*.pyc
+.venv/
+.coverage
+coverage.xml
+.pytest_cache/
