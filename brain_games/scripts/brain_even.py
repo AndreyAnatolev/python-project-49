@@ -5,8 +5,8 @@ import brain_games.greeting
 
 
 def main():
-    brain_games.greeting.greeting()
-    brain_games.games_even.games_even()
+    user_name = brain_games.greeting.greeting()
+    brain_games.games_even.games_even(user_name)
 
 
 if __name__ == '__main__':
