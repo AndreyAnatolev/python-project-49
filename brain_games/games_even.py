@@ -1,6 +1,7 @@
 from random import randint
 import prompt
-from brain_games.greeting import user_name
+from brain_games.greeting.greeting import user_name
+
 
 def games_even():
     print('''Answer "yes" if the number is even, otherwise answer "no".''')
@@ -19,7 +20,7 @@ def games_even():
             count += 1
             print('Correct!')
             if count == 3:
-                print(f'Congratulations, {user_name}!')
+                print(f'Congratulations, {brain_games.greeting.greeting.user_name}!')
         else:
             print(f"'{answer_user}' is wrong answer ;(."
                   f"Correct answer was '{answer_random}'. "
