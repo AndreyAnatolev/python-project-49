@@ -19,9 +19,7 @@ def calc(user_name):
                 answer_game = a + b
             elif operation == '-':
                 answer_game = a - b
-            elif operation == '*':
-                answer_game = a * b
-        if answer_user == str(answer_game):
+e        if answer_user == str(answer_game):
             count += 1
             print('Correct!')
             if count == 3:
