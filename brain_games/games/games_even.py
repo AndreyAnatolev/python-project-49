@@ -1,7 +1,8 @@
 from random import randint
 
+rules_of_game = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-def games_even_question():
+def games_even():
     n = randint(1, 99)
     print('Question:', n)
     answer_user = ''
