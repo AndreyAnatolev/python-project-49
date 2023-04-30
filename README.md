@@ -9,3 +9,9 @@ https://asciinema.org/a/579713
 
 ### Asciinema brain-calc
 https://asciinema.org/a/581523
+
+### Asciinema brain-gcd
+https://asciinema.org/a/581526
+
+### Asciinema brain-progression
+https://asciinema.org/a/581550
