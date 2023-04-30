@@ -1,4 +1,3 @@
-
 import prompt
 
 
@@ -10,7 +9,7 @@ def logic_games(game_variants):
 
     count = 0
     for _ in range(3):
-        answer_correct, answer_user = game_variants.games_even()
+        answer_correct, answer_user = game_variants.body_of_games()
         if answer_correct == answer_user:
             count += 1
             print('Correct!')
