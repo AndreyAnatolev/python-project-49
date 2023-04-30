@@ -9,7 +9,7 @@ def body_of_games():
     b = randint(1, 99)
     list1 = ['+', '-', '*']
     operation = choice(list1)
-    print('Question: ', a, operation, b)
+    print('Question:', a, operation, b)
     print('Your answer: ', end='')
     answer_user = input()
     answer_correct = ''
