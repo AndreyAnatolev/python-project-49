@@ -9,14 +9,13 @@ def body_of_games():
     b = randint(1, 99)
     list1 = ['+', '-', '*']
     operation = choice(list1)
-    print('Question:', a, operation, b)
-    print('Your answer: ', end='')
-    answer_user = input()
+    task = f'{a} {operation} {b}'
     answer_correct = ''
+
     if operation == '+':
         answer_correct = a + b
     elif operation == '-':
         answer_correct = a - b
     elif operation == '*':
         answer_correct = a * b
-    return str(answer_correct), answer_user
+    return task, str(answer_correct)
