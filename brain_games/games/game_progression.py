@@ -14,7 +14,11 @@ def body_of_games():
     answer_correct = progression[index_random]
     progression.pop(index_random)
     progression.insert(index_random, '..')
-    print('Question:', *progression)
-    print('Your answer: ', end='')
-    answer_user = input()
-    return answer_correct, answer_user
+    task = ''
+    for index, i in enumerate(progression):
+        if index < 9:
+            task += f'{i} '
+        else:
+            task += f'{i}'
+
+    return task, answer_correct
