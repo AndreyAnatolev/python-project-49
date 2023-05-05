@@ -9,7 +9,10 @@ def logic_games(game_variants):
 
     count = 0
     for _ in range(3):
-        answer_correct, answer_user = game_variants.body_of_games()
+        task, answer_correct = game_variants.body_of_games()
+        print('Question:', task)
+        answer_user = input('Your_answer: ')
+
         if answer_correct == answer_user:
             count += 1
             print('Correct!')
