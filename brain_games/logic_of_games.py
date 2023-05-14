@@ -3,7 +3,7 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def logic_games(game_variants):
+def run(game_variants):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
@@ -11,7 +11,7 @@ def logic_games(game_variants):
 
     count = 0
     for _ in range(NUMBER_OF_ROUNDS):
-        task, answer_correct = game_variants.body_of_games()
+        task, answer_correct = game_variants.task_and_answer_correct()
         print('Question:', task)
         answer_user = input('Your_answer: ')
 
