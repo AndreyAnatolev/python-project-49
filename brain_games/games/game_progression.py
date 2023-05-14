@@ -18,18 +18,17 @@ def arithmetic_progression(first_number, length, step):
     return progression
 
 
-def task_and_true_answer(progression):
+def question_and_hidden_element(progression):
     index_random = randint(1, len(progression) - 1)
     hidden_num = progression[index_random]
     answer_correct = str(hidden_num)
-
     progression[index_random] = '..'
     task = ' '.join(progression)
 
     return task, answer_correct
 
 
-def body_of_games():
+def task_and_answer_correct():
     start_num_of_progression = randint(
         MIN_NUM_START_OF_PROG, MAX_NUM_START_OF_PROG)
     range_of_step = randint(
@@ -38,6 +37,6 @@ def body_of_games():
         MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
     progression = arithmetic_progression(
         start_num_of_progression, progression_length, range_of_step)
-    task, answer_correct = task_and_true_answer(progression)
+    task, answer_correct = question_and_hidden_element(progression)
 
     return task, answer_correct
