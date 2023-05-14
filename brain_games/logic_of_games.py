@@ -1,5 +1,7 @@
 import prompt
 
+NUMBER_OF_ROUNDS = 3
+
 
 def logic_games(game_variants):
     print('Welcome to the Brain Games!')
@@ -8,7 +10,7 @@ def logic_games(game_variants):
     print(game_variants.RULES_OF_GAME)
 
     count = 0
-    for _ in range(3):
+    for _ in range(NUMBER_OF_ROUNDS):
         task, answer_correct = game_variants.body_of_games()
         print('Question:', task)
         answer_user = input('Your_answer: ')
