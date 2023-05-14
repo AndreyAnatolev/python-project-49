@@ -38,5 +38,6 @@ def body_of_games():
         MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
     progression = arithmetic_progression(
         start_num_of_progression, progression_length, range_of_step)
+    task, answer_correct = task_and_true_answer(progression)
 
-    return task, answer_correct == task_and_true_answer(progression)
+    return task, answer_correct
