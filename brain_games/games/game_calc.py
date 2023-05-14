@@ -1,7 +1,7 @@
 from random import randint
 from random import choice
 
-rules_of_game = 'What is the result of the expression?'
+RULES_OF_GAME = 'What is the result of the expression?'
 
 
 def body_of_games():

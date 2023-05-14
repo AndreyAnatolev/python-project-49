@@ -1,7 +1,7 @@
 from random import randint
 from math import gcd
 
-rules_of_game = 'Find the greatest common divisor of given numbers.'
+RULES_OF_GAME = 'Find the greatest common divisor of given numbers.'
 
 
 def body_of_games():
