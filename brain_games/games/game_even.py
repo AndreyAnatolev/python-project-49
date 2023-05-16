@@ -7,7 +7,7 @@ def even_numbered(number):
     return number % 2 == 0
 
 
-def body_of_games():
+def task_and_answer_correct():
     task = randint(1, 99)
     if even_numbered(task) is True:
         answer_correct = 'yes'

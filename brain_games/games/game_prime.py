@@ -11,7 +11,7 @@ def simple_number(number):
     return count == 2
 
 
-def body_of_games():
+def task_and_answer_correct():
     task = randint(1, 100)
     if simple_number(task) is True:
         answer_correct = 'yes'
