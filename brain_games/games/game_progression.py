@@ -1,10 +1,10 @@
 from random import randint
 
 RULES_OF_GAME = 'What number is missing in the progression?'
-MIN_NUM_START_OF_PROG = 1
-MAX_NUM_START_OF_PROG = 20
-MIN_RANGE_OF_STEP = 3
-MAX_RANGE_OF_STEP = 7
+MIN_INITIAL_TERM_OF_PROG = 1
+MAX_INITIAL_TERM_OF_PROG = 20
+MIN_DIFFERENCE_OF_ARITH_PROG = 3
+MAX_DIFFERENCE_OF_ARITH_PROG = 7
 MIN_PROGRESSION_LENGTH = 5
 MAX_PROGRESSION_LENGTH = 10
 
@@ -28,14 +28,14 @@ def question_and_hidden_element(progression, index_random):
 
 
 def task_and_answer_correct():
-    start_num_of_progression = randint(
-        MIN_NUM_START_OF_PROG, MAX_NUM_START_OF_PROG)
-    range_of_step = randint(
-        MIN_RANGE_OF_STEP, MAX_RANGE_OF_STEP)
+    initial_term_of_arith_prog = randint(
+        MIN_INITIAL_TERM_OF_PROG, MAX_INITIAL_TERM_OF_PROG)
+    difference_of_arith_prog = randint(
+        MIN_DIFFERENCE_OF_ARITH_PROG, MAX_DIFFERENCE_OF_ARITH_PROG)
     progression_length = randint(
         MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
     progression = arithmetic_progression(
-        start_num_of_progression, progression_length, range_of_step)
+        initial_term_of_arith_prog, progression_length, difference_of_arith_prog)
     index_random = randint(1, len(progression) - 1)
     task, answer_correct = question_and_hidden_element(
         progression, index_random)
