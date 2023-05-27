@@ -12,7 +12,7 @@ MAX_PROGRESSION_LENGTH = 10
 def create_the_arithmetic_progression(first_number, length, step):
     last_num_of_progression = first_number + ((length - 1) * step)
     progression = [
-        str(number) for number in range(
+        number for number in range(
             first_number, last_num_of_progression + 1, step)]
 
     return progression
@@ -22,7 +22,7 @@ def create_the_question_and_hidden_element(progression, index_random):
     hidden_num = progression[index_random]
     answer_correct = str(hidden_num)
     progression[index_random] = '..'
-    task = ' '.join(progression)
+    task = ' '.join([str(number) for number in progression])
 
     return task, answer_correct
 
