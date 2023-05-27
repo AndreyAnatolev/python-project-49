@@ -3,7 +3,7 @@ from random import randint
 RULES_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def check_for_prime(number):
+def is_the_number_prime(number):
     count = 0
     for i in range(1, number + 1):
         if number % i == 0:
