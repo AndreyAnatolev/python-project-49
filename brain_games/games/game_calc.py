@@ -7,7 +7,7 @@ MAX_VALUE_FOR_RANDOM = 99
 LIST_OF_OPERATION = ['+', '-', '*']
 
 
-def calculator(first_num, operation, second_num):
+def calculate_the_value(first_num, operation, second_num):
     if operation == '+':
         return first_num + second_num
     elif operation == '-':
@@ -21,6 +21,6 @@ def task_and_answer_correct():
     second_number = randint(MIN_VALUE_FOR_RANDOM, MAX_VALUE_FOR_RANDOM)
     operation = choice(LIST_OF_OPERATION)
     task = f'{first_number} {operation} {second_number}'
-    answer_correct = calculator(first_number, operation, second_number)
+    answer_correct = calculate_the_value(first_number, operation, second_number)
 
     return task, str(answer_correct)
