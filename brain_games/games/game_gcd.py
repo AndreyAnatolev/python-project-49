@@ -6,7 +6,7 @@ MIN_VALUE_FOR_RANDOM = 1
 MAX_VALUE_FOR_RANDOM = 100
 
 
-def task_and_answer_correct():
+def create_the_task():
     first_random_number = randint(MIN_VALUE_FOR_RANDOM, MAX_VALUE_FOR_RANDOM)
     second_random_number = randint(MIN_VALUE_FOR_RANDOM, MAX_VALUE_FOR_RANDOM)
     task = f'{first_random_number} {second_random_number}'

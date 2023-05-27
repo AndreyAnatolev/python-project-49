@@ -3,7 +3,7 @@ from random import randint
 RULES_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def simple_number(number):
+def check_for_prime(number):
     count = 0
     for i in range(1, number + 1):
         if number % i == 0:
@@ -11,9 +11,9 @@ def simple_number(number):
     return count == 2
 
 
-def task_and_answer_correct():
+def create_the_task():
     task = randint(1, 100)
-    if simple_number(task) is True:
+    if check_for_prime(task) is True:
         answer_correct = 'yes'
     else:
         answer_correct = 'no'

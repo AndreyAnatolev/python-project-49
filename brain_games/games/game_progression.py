@@ -9,7 +9,7 @@ MIN_PROGRESSION_LENGTH = 5
 MAX_PROGRESSION_LENGTH = 10
 
 
-def arithmetic_progression(first_number, length, step):
+def create_the_arithmetic_progression(first_number, length, step):
     last_num_of_progression = first_number + ((length - 1) * step)
     progression = [
         str(number) for number in range(
@@ -18,7 +18,7 @@ def arithmetic_progression(first_number, length, step):
     return progression
 
 
-def question_and_hidden_element(progression, index_random):
+def create_the_question_and_hidden_element(progression, index_random):
     hidden_num = progression[index_random]
     answer_correct = str(hidden_num)
     progression[index_random] = '..'
@@ -27,17 +27,17 @@ def question_and_hidden_element(progression, index_random):
     return task, answer_correct
 
 
-def task_and_answer_correct():
+def create_the_task():
     initial_term_of_arith_prog = randint(
         MIN_INITIAL_TERM_OF_PROG, MAX_INITIAL_TERM_OF_PROG)
     difference_of_arith_prog = randint(
         MIN_DIFFERENCE_OF_ARITH_PROG, MAX_DIFFERENCE_OF_ARITH_PROG)
     progression_length = randint(
         MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
-    progression = arithmetic_progression(
+    progression = create_the_arithmetic_progression(
         initial_term_of_arith_prog, progression_length, difference_of_arith_prog)
     index_random = randint(1, len(progression) - 1)
-    task, answer_correct = question_and_hidden_element(
+    task, answer_correct = create_the_question_and_hidden_element(
         progression, index_random)
 
     return task, answer_correct

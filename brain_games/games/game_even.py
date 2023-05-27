@@ -3,13 +3,13 @@ from random import randint
 RULES_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even_numbered(number):
+def check_for_even(number):
     return number % 2 == 0
 
 
-def task_and_answer_correct():
+def create_the_task():
     task = randint(1, 99)
-    if even_numbered(task) is True:
+    if check_for_even(task) is True:
         answer_correct = 'yes'
     else:
         answer_correct = 'no'

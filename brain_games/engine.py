@@ -11,7 +11,7 @@ def run(game):
 
     count = 0
     for _ in range(NUMBER_OF_ROUNDS):
-        task, answer_correct = game.task_and_answer_correct()
+        task, answer_correct = game.create_the_task()
         print('Question:', task)
         answer_user = input('Your_answer: ')
 
