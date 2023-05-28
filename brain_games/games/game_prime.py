@@ -13,8 +13,5 @@ def is_the_number_prime(number):
 
 def create_the_task():
     task = randint(1, 100)
-    if check_for_prime(task) is True:
-        answer_correct = 'yes'
-    else:
-        answer_correct = 'no'
+    answer_correct = ('no', 'yes')[is_the_number_prime(task)]
     return task, answer_correct
