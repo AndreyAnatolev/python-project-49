@@ -1,14 +1,16 @@
 from random import randint
+from math import sqrt
 
 RULES_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_the_number_prime(number):
     count = 0
-    for i in range(1, number + 1):
+    for i in range(2, int(sqrt(number))):
         if number % i == 0:
             count += 1
-    return count == 2
+            break
+    return count == 0
 
 
 def create_the_task():
