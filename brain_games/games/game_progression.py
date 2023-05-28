@@ -28,14 +28,14 @@ def create_the_question_and_hidden_element(progression, index_random):
 
 
 def create_the_task():
-    initial_term_of_arith_prog = randint(
+    initial_term = randint(
         MIN_INITIAL_TERM_OF_PROG, MAX_INITIAL_TERM_OF_PROG)
     difference_of_arith_prog = randint(
         MIN_DIFFERENCE_OF_ARITH_PROG, MAX_DIFFERENCE_OF_ARITH_PROG)
     progression_length = randint(
         MIN_PROGRESSION_LENGTH, MAX_PROGRESSION_LENGTH)
     progression = create_the_arithmetic_progression(
-        initial_term_of_arith_prog, progression_length, difference_of_arith_prog)
+        initial_term, progression_length, difference_of_arith_prog)
     index_random = randint(1, len(progression) - 1)
     task, answer_correct = create_the_question_and_hidden_element(
         progression, index_random)
