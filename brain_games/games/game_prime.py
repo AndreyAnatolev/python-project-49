@@ -5,12 +5,15 @@ RULES_OF_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_the_number_prime(number):
-    count = 0
-    for i in range(2, int(sqrt(number))):
-        if number % i == 0:
-            count += 1
-            break
-    return count == 0
+    if number != 1:
+        count = 0
+        for i in range(2, int(sqrt(number))):
+            if number % i == 0:
+                count += 1
+                break
+        return count == 0
+    else:
+        return False
 
 
 def create_the_task():
