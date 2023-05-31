@@ -8,7 +8,7 @@ def is_the_number_prime(number):
     if number in (0, 1):
         return False
 
-    for i in range(2, round(sqrt(number))):
+    for i in range(2, round(sqrt(number)) + 1):
         if number % i == 0:
             return False
 
